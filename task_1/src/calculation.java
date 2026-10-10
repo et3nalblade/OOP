@@ -20,6 +20,6 @@ public class calculation {
         }
 
         double PI = Math.PI;
-        return ((length * length) / 4 * PI);
+        return (length * length) / (4 * PI);
     }
 }

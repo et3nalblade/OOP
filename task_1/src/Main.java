@@ -9,9 +9,10 @@ public class Main {
      * Главный класс программы. Считывает диаметр круга и вовзращает его площадь
      */
     public static void main(String[] args) {
+        System.out.println("Введите длину");
         Scanner scanner = new Scanner(System.in);
         // Считываем длину (целое число)
-        int length = scanner.nextInt();
+        double length = scanner.nextDouble();
         System.out.println(calculation.result(length));
     }
 }
