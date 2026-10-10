@@ -1,60 +1,56 @@
-package ru.zabgu.arrays;
+package arrays;
 
 import java.util.Scanner;
 
-/**
- * Главный класс программы.
- *
- * @author ТВОЁ_ИМЯ
- */
+// Главный класс программы, с которого начинается выполнение
 public class Main {
 
+    // Точка входа в программу
+    // String[] args — аргументы командной строки
     public static void main(String[] args) {
 
+        // Создаём объект для ввода данных с клавиатуры
         Scanner scanner = new Scanner(System.in);
 
+        // Выполняем основные действия и обрабатываем возможные ошибки
         try {
-            System.out.print("Введите размер массива: ");
-            int n = scanner.nextInt();
 
-            if (n <= 0) {
-                throw new ArrayException(
-                        "Размер массива должен быть положительным");
-            }
+            // Считываем массив чисел, введённых пользователем
+            // scanner — объект для чтения данных
+            double[] array = ArrayUtils.readArray(scanner);
 
-            double[] array = new double[n];
-
-            System.out.println(
-                    "Введите " + n + " действительных чисел:");
-
-            for (int i = 0; i < n; i++) {
-                array[i] = scanner.nextDouble();
-            }
-
+            // Выводим заголовок и элементы массива
             System.out.println("Массив:");
             ArrayUtils.printArray(array);
 
-            double product =
-                    ProductCalculator.calculateProduct(array);
+            // Вычисляем произведение всех элементов массива
+            double product = ProductCalculator.calculateProduct(array);
 
-            System.out.println(
-                    "Произведение = " + product);
+            // Выводим результат вычисления
+            System.out.println("Произведение = " + product);
 
-            ArrayFileUtils.writeToFile(
-                    array, "array.txt");
+            // Записываем массив в файл array.txt
+            // array — массив для записи
+            // "array.txt" — имя файла
+            ArrayFileUtils.writeToFile(array, "array.txt");
 
-            System.out.println(
-                    "Массив записан в array.txt");
+            // Сообщаем об успешном выполнении записи
+            System.out.println("Массив записан в array.txt");
 
+            // Обрабатываем ошибки, связанные с работой программы и массивами
         } catch (ArrayException e) {
+            System.out.println("Ошибка: " + e.getMessage());
 
-            System.out.println(
-                    "Ошибка: " + e.getMessage());
-
+            // Обрабатываем другие ошибки, например некорректный ввод
         } catch (Exception e) {
-
-            System.out.println(
-                    "Ошибка ввода: " + e.getMessage());
+            System.out.println("Ошибка ввода: " + e.getMessage());
         }
+
+        // Генерируем случайный массив из 5 чисел в диапазоне от 0 до 10
+        // и выводим его на экран
+        ArrayUtils.printArray(ArrayUtils.generateRandomArray(5, 0, 10));
+
+        // Закрываем Scanner после завершения ввода
+        scanner.close();
     }
 }

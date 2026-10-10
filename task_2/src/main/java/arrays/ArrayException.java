@@ -1,8 +1,10 @@
 package arrays;
 
-public class ArrayException extends RuntimeException{
+// обработка ошибок при работе с массивами
+public class ArrayException extends RuntimeException {
 
-    public ArrayException(String message){
+    // Конструктор принимает сообщение об ошибке и передаёт его родительскому классу
+    public ArrayException(String message) {
         super(message);
     }
 }

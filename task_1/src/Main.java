@@ -1,18 +1,19 @@
-import java.util.Scanner;
+
 /**
- * Задание: Известна длина окружности. Найти площадь круга, ограниченного этой окружностью.
- * Площадь вычисляется по формуле: S = (L * L) / (4 * π), где L — длина окружности.
+ * Задание: Известна длина окружности. Найти площадь круга,
+ * ограниченного этой окружностью.
+ *
  * @author Григорий Матыскин
  */
 public class Main {
+
     /**
-     * Главный класс программы. Считывает диаметр круга и вовзращает его площадь
+     * Главный класс программы. Получает длину окружности через args
+     * и выводит площадь круга.
      */
     public static void main(String[] args) {
-        System.out.println("Введите длину");
-        Scanner scanner = new Scanner(System.in);
-        // Считываем длину (целое число)
-        double length = scanner.nextDouble();
+        double length = Double.parseDouble(args[0]);
+
         System.out.println(calculation.result(length));
     }
 }
