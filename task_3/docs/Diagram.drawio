@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Ky1rX7DIB3PojAAt79K1">
+    <mxGraphModel dx="-130" dy="908" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="БАНКОВСКИЙ СЧЁТ&lt;br&gt;Java · ООП · task_3" vertex="1">
+          <mxGeometry height="60" width="120" x="920" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Main&lt;div&gt;main()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="830" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="BankAccount&lt;div&gt;Поля&lt;/div&gt;&lt;div&gt;owner: String&lt;/div&gt;&lt;div&gt;balance: double&lt;/div&gt;&lt;div&gt;Методы&lt;/div&gt;&lt;div&gt;deposit(), withdraw(), transfer()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="170" x="920" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Анна&lt;div&gt;Начало: 1 000&lt;/div&gt;&lt;div&gt;+200 −100 −300&lt;/div&gt;&lt;div&gt;Итог: 800&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="800" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" value="Иван&lt;div&gt;Начало: 500&lt;/div&gt;&lt;div&gt;+300&lt;/div&gt;&lt;div&gt;Итог: 800&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="1030" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-6" edge="1" parent="1" source="od_UZaCQf7bm_HJnKuTb-2" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;" target="od_UZaCQf7bm_HJnKuTb-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1345" y="900" as="sourcePoint" />
+            <mxPoint x="1295" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-7" connectable="0" parent="od_UZaCQf7bm_HJnKuTb-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="создаёт / вызывает методы" vertex="1">
+          <mxGeometry relative="1" x="0.0762" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-8" edge="1" parent="1" source="od_UZaCQf7bm_HJnKuTb-3" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;" target="od_UZaCQf7bm_HJnKuTb-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1345" y="530" as="sourcePoint" />
+            <mxPoint x="1295" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-9" edge="1" parent="1" source="od_UZaCQf7bm_HJnKuTb-3" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;" target="od_UZaCQf7bm_HJnKuTb-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1295" y="580" as="sourcePoint" />
+            <mxPoint x="1345" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-10" edge="1" parent="1" source="od_UZaCQf7bm_HJnKuTb-4" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;startSize=8;endSize=8;curved=1;" target="od_UZaCQf7bm_HJnKuTb-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1150" y="460" as="sourcePoint" />
+            <mxPoint x="1200" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="od_UZaCQf7bm_HJnKuTb-11" connectable="0" parent="od_UZaCQf7bm_HJnKuTb-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;fontSize=12;defaultLabelBackgroundColor=page;labelPadding=0 4;" value="transfer(ivan, 300)" vertex="1">
+          <mxGeometry relative="1" x="0.0184" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
